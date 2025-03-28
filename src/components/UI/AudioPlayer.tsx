@@ -8,7 +8,7 @@ interface AudioPlayerProps {
 
 const AudioPlayer = ({ src, title }: AudioPlayerProps) => {
   return (
-    <div className="audio-player bg-card">
+    <div className="audio-player bg-card rounded-lg shadow">
       <div className="p-4">
         <h4 className="font-serif text-lg mb-2">{title}</h4>
       </div>

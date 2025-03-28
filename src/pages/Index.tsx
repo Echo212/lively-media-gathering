@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
@@ -23,6 +23,10 @@ const featuredInterview = {
 };
 
 const Index = () => {
+  useEffect(() => {
+    console.log('Index component rendered');
+  }, []);
+
   return (
     <div className="page-transition min-h-screen flex flex-col">
       <Header />
